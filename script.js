@@ -30,5 +30,6 @@ findMaxAndMinButton.addEventListener("click", function findMaxandMin() {
         number > max ? max = number : "";
         number < min ? min = number : "";
     })
-    result.innerHTML = `<h3 class="text-warning">The max number is ${max} and the min number is ${min}</h3>`;
+    result.innerHTML = `<h3 class="text-warning">The max number is 
+    <span class="text-danger">${max}</span> and the min number is <span class="text-danger">${min}</span></h3>`;
 });

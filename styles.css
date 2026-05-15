@@ -7,7 +7,7 @@ ul {
 }
 
 li {
-    border: 1px solid black;
+    border: 2px solid rgb(215, 215, 64);
     border-radius: 5px;
     padding: 0.5rem;
 }
