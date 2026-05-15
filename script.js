@@ -32,5 +32,5 @@ findMaxAndMinButton.addEventListener("click", () => {
     }
     
     result.insertAdjacentHTML("beforeend", `
-        <h2>The max number is ${max} and the min number is ${min}`);
+        <h3 class="text-warning">The max number is ${max} and the min number is ${min}</h3>`);
 })

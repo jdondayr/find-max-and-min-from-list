@@ -14,17 +14,17 @@
 
 </head>
 
-<body>
+<body class="bg-dark bg-gradient">
 
-    <div class="container-fluid d-flex flex-column align-items-center gap-3">
-        <h1>Find Max and Min in a list</h1>
-        <p>This program will find the max and the min value of an interactive list.</p>
-        <p>Please, insert numbers to the list using the "Add to the list" button.</p>
+    <div class="container-fluid d-flex flex-column align-items-center mt-5 gap-3 text-light">
+        <h1 class="text-warning">Find Max and Min in a list</h1>
+        <p class="fs-4">This program will find the max and the min value of an interactive list.</p>
+        <p class="fs-4">Please, insert numbers to the list using the "Add to the list" button.</p>
         <input type="number" id="numberInput">
-        <button id="addButton">Add to the list</button>
+        <button id="addButton" class="btn btn-outline-warning">Add to the list</button>
         <ul id="numbersList"></ul>
-        <button id="resetButton">Reset</button>
-        <button id="findMaxAndMinButton">Find Max and Min</button>
+        <button id="resetButton" class="btn btn-outline-danger">Reset</button>
+        <button id="findMaxAndMinButton" class="btn btn-outline-warning">Find Max and Min</button>
         <div id="result"></div>
     </div>
 
