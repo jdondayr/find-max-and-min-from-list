@@ -1,0 +1,13 @@
+
+ul {
+    max-width: 100%;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+li {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
