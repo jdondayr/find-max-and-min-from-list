@@ -23,7 +23,7 @@ resetButton.addEventListener("click", () => {
 
 // Find max and min function
 findMaxAndMinButton.addEventListener("click", () => {
-    if (numbersArray.length < 2) continue; // Evita que se use el botón si no hay números suficientes para la función
+    if (numbersArray.length < 2) return; // Evita que se use el botón si no hay números suficientes para la función
     let max = -Infinity; 
     let min = Infinity;
     for (let number of numbersArray) {
