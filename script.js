@@ -22,15 +22,13 @@ resetButton.addEventListener("click", () => {
 })
 
 // Find max and min function
-findMaxAndMinButton.addEventListener("click", () => {
+findMaxAndMinButton.addEventListener("click", function findMaxandMin() {
     if (numbersArray.length < 2) return; // Evita que se use el botón si no hay números suficientes para la función
     let max = -Infinity; 
     let min = Infinity;
-    for (let number of numbersArray) {
-        if (number > max) max = number;
-        if (number < min) min = number;
-    }
-    
-    result.insertAdjacentHTML("beforeend", `
-        <h3 class="text-warning">The max number is ${max} and the min number is ${min}</h3>`);
-})
+    numbersArray.forEach(number => {
+        number > max ? max = number : "";
+        number < min ? min = number : "";
+    })
+    result.innerHTML = `<h3 class="text-warning">The max number is ${max} and the min number is ${min}</h3>`;
+});
